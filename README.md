@@ -1,6 +1,9 @@
-# Serverless Hands-on Labs
-AWSKRUG Hands-on Lab 2018 is bi-weekly Saturday HoLs until Oct 20 (9 sessions, 70 pax per HoLs) with topics of Container, Serverless and Data Analysis. Here is voluntary made guides. If you want to join HoLs, please refer to https://www.meetup.com/awskrug/events/.
+# Serverless Region Error issue
 
-* 30th June – [Serverless #1: Serverless Web App & Crawler ](./1_WebApp-Crawler/)
-* 28th July – [Serverless #2:  AWS SAM & Monitoring & CI/CD](https://github.com/ChanghoonHyun/SAM-hands-on)
-* 11st August – [Serverless #3: Serverless datalake](./3_serverless_datalake)
+*Serverless 구축완료 후 서버가동하여 접속 TEST 진행 오류 발생
+curl localhost:8080 --> hello World 출력 (정상)
+curl localhost:8080/todo --> 무응답 (정상)
+{"message":"Missing region in config","code":"ConfigError","time..~} (오류)
+
+npm start 하기전 export 처리함
+* export AWS_REGION=us-east-2 (리전값은 cloud9 설치 리전 값)
