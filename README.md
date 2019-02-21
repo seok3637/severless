@@ -1,6 +1,6 @@
 # Serverless Region Error issue
 
-*Serverless 구축완료 후 서버가동하여 접속 TEST 진행 오류 발생
+*Serverless 구축완료 후 서버가동하여 접속 TEST 진행 오류 발생 <br>
 curl localhost:8080 --> hello World 출력 (정상) <br>
 curl localhost:8080/todo --> 무응답 (정상) </br>
 {"message":"Missing region in config","code":"ConfigError","time..~} (오류) <br>
